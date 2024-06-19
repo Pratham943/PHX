@@ -8,7 +8,7 @@ if (willRain) {
     console.log("no need");
 };
 /* ternary opertor */
-
+// asf
 
 
 
