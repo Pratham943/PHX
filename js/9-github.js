@@ -7,6 +7,7 @@ let user = {
 
 if(user.paidStatus){
     console.log(`${user.name} can give exam `);
+   
  } else {
    if(user.hasScholarship)  {
     console.log(`${user.name} can give exam `);
