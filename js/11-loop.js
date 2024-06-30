@@ -46,37 +46,37 @@ let countries = [
     {
         "code": "af",
         "name": "Afghanistan",
-        "path": "afghanistan"
+        "path": "afghanistan",
     },
     {
         "code": "al",
         "name": "Albania",
-        "path": "albania"
+        "path": "albania",
     },
     {
         "code": "dz",
         "name": "Algeria",
-        "path": "algeria"
+        "path": "algeria",
     },
     {
         "code": "as",
         "name": "American Samoa",
-        "path": "americansamoa"
+        "path": "americansamoa",
     },
     {
         "code": "ad",
         "name": "Andorra",
-        "path": "andorra"
+        "path": "andorra",
     },
     {
         "code": "ao",
         "name": "Angola",
-        "path": "angola"
+        "path": "angola",
     },
     {
         "code": "ai",
         "name": "Anguilla",
-        "path": "anguilla"
+        "path": "anguilla",
     },
 ]
 /* 
@@ -90,14 +90,15 @@ let countries = [
 */
 
 function findCountryCode(country) {
-    for (i = 0; i < countries.length; i++) {
-        if (countries[i].name == country){
-            console.log(`${countries[i].code} is the country code`);
-        }else{
-            console.log(`county code not found`);
-        }
-    }
-}
+   
+    for (let i = 0; i < countries.length; i++) {
 
-findCountryCode("Nepal")
-findCountryCode("Anguilla")
+        if (countries[i].name.toLowerCase() === country.toLowerCase() ){
+            return console.log(`${countries[i].code} is the country code`);
+            break;
+        }
+    };
+    return console.log(`not found`);
+};
+           
+findCountryCode("anguilla");

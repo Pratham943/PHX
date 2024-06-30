@@ -29,10 +29,9 @@ let db_users = [
 function login(email, password) {
     for (index = 0; index <db_users.length; index++) {
         if (db_users[index].email == email && db_users[index].password == password) {
-            console.log(`welcome ${db_users[index].name} `);
-        } else if(db_users[index].email != email && db_users[index].password != password){
-             console.log(`unable to login`);
-        }
+            return console.log(`welcome ${db_users[index].name} `);
+        } 
     }
+    return console.log(`unable to login`);
 }
 login("sabina@gmail.com", "sabina28")
